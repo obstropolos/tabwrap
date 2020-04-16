@@ -1,0 +1,22 @@
+{
+    "name": "TabWrap",
+    "version": "0.1",
+    "description": "Tab and window management",
+    "author": "Gregory Rocco",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "TabWrap"
+    },
+    "icons" : {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "declarativeContent"
+    ],
+    "manifest_version": 2
+}

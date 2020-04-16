@@ -1,0 +1,162 @@
+<html style="width:380px; height:584px; background:#F8F8F8;">
+    <head>
+    <title>TabWrap</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        .heading_rectangle {
+            position: absolute;
+            width: 380px;
+            height: 60px;
+            left: 0px;
+            top: 0px;
+            background: #FFFFFF;
+            border: 1px solid #C3C3C3;
+        }
+        .heading_image {
+            position: absolute;
+            left: 43.68%;
+            right: 43.42%;
+            top: 16.67%;
+            bottom: 15%;
+            cursor: pointer;
+        }
+        .triple_slot {       
+            position: absolute;
+            width: 340px;
+            height: 484px;
+            left: 20px;
+            top: 80px;
+        }
+        .inner_rectangle {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            background: #FFFFFF;
+            border: 1px solid #C3C3C3;
+            box-sizing: border-box;
+        }
+        h3 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            color: #8A73CF;
+            display: inline-block;
+        }
+        .hrOne {
+            position: absolute;
+            left: 5.88%;
+            right: 5.88%;
+            top: 30.00%;
+            bottom: 70%;
+
+            border: 1px solid #C3C3C3;
+        }
+        .hrTwo {
+            position: absolute;
+            left: 5.88%;
+            right: 5.88%;
+            top: 60.00%;
+            bottom: 40%;
+
+            border: 1px solid #C3C3C3;
+        }
+        .button {
+            background: #8A73CF;
+            border: 1px solid rgba(195, 195, 195, 0.2);
+            padding: 10px 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            font-size: 18px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s;
+        }
+        .button:hover span {
+            padding-right: 15px;
+        }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .info_button {
+            background: #8A73CF;
+            border: 1px solid rgba(195, 195, 195, 0.2);
+            padding: 3px 6px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            font-size: 12px;
+            color: #FFFFFF;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="heading_rectangle">
+            <div class="heading_image">
+                <img id="tabwrapLogo" src="icon.png" width="49" height="41">
+            </div>
+        </div>
+
+        <div class="triple_slot">
+            <div class="inner_rectangle">
+
+                <div align="center">
+                    <h3 id="slotOne">Slot 1</h3> <button class="info_button" id="infoOne">?</button>
+                </div>
+                <div align="center">
+                    <button class="button" id="wrapOne"><span>Wrap</span></button>
+                    <button class="button" id="deployOne">Deploy</button>
+                    <button class="button" id="deleteOne">Delete</button>
+                </div>
+
+                <div class="hrOne"></div>
+                <br>
+
+                <div align="center">
+                    <h3 id="slotTwo">Slot 2</h3> <button class="info_button" id="infoTwo">?</button>
+                </div>
+
+                <div align="center">
+                    <button class="button" id="wrapTwo"><span>Wrap</span></button>
+                    <button class="button" id="deployTwo">Deploy</button>
+                    <button class="button" id="deleteTwo">Delete</button>
+                </div>
+
+                <div class="hrTwo"></div>
+                <br>
+
+                <div align="center">
+                    <h3 id="slotThree">Slot 3</h3> <button class="info_button" id="infoThree">?</button>
+                </div>
+
+                <div class="row">
+                    <div align="center">
+                        <button class="button" id="wrapThree"><span>Wrap</span></button>
+                        <button class="button" id="deployThree">Deploy</button>
+                        <button class="button" id="deleteThree">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+    </body>
+    <script src="popup.js"></script>
+</html>
