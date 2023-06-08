@@ -1,6 +1,6 @@
 {
     "name": "TabWrap",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "Tab and window management",
     "author": "Gregory Rocco",
     "browser_action": {
@@ -16,7 +16,6 @@
     "permissions": [
         "tabs",
         "storage",
-        "declarativeContent"
     ],
     "manifest_version": 2
 }
